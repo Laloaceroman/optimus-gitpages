@@ -1991,6 +1991,7 @@ footer .footer__logo .footer__img {
 @media (min-width: 720px) {
   footer .footer__logo .footer__img img {
     margin: initial;
+    width: 200px;
   }
 }
 footer .footer__nav {
@@ -2321,7 +2322,7 @@ header .header__logo {
 header .header__logo img {
   vertical-align: middle;
   display: inline-block;
-  width: 50px;
+  width: 120px;
 }
 header .header__nav,
 header .header__nav__mobile {
@@ -2740,7 +2741,7 @@ header.header--static .header__logo.header__logo--white {
     margin-right: 20px;
   }
   header .header__logo img {
-    width: 60px;
+    width: 220px;
   }
   header .header__ham {
     margin-right: -20px;
