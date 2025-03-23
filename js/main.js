@@ -718,7 +718,7 @@ app.slider = {
 app.swiper = {
   init: function() {
     var swiper;
-    return swiper = new Swiper('.swiper-testimonies', {
+    swiper = new Swiper('.swiper-testimonies', {
       loop: true,
       pagination: {
         el: '.swiper-pagination',
@@ -741,6 +741,34 @@ app.swiper = {
         },
         1400: {
           slidesPerView: 2,
+          spaceBetween: 10,
+          slidesPerGroup: 2
+        }
+      }
+    });
+    return swiper = new Swiper('.swiper-clientes', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+          slidesPerGroup: 1
+        },
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          slidesPerGroup: 2
+        },
+        1400: {
+          slidesPerView: 4,
           spaceBetween: 10,
           slidesPerGroup: 2
         }
