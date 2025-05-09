@@ -3388,15 +3388,11 @@ section .section__social .section__social__logo {
   -ms-flex-align: center;
       align-items: center;
   border: 2px solid #205781;
+  transition: 0.3s;
 }
 section .section__social .section__social__logo:hover {
-  background-color: #fff;
-}
-section .section__social .section__social__logo:hover a {
-  color: #212121;
-}
-section .section__social .section__social__logo:hover svg path {
-  fill: #212121;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 section .section__social .section__social__logo a {
   color: #fff;
@@ -3410,6 +3406,9 @@ section .section__social .section__social__logo a:after {
   left: 0;
   width: 100%;
   height: 100%;
+}
+section .section__social .section__social__logo a img {
+  width: 25px;
 }
 section .section__social .section__social__logo svg {
   width: 20px;
@@ -3866,6 +3865,19 @@ section.section--clients .section__client img {
   height: initial;
   max-width: 160px;
   max-height: 80px;
+}
+section.section--clients .section__wrapper {
+  position: relative;
+}
+section.section--clients .section__wrapper .swiper-button-next,
+section.section--clients .section__wrapper .swiper-button-prev {
+  top: 40%;
+}
+section.section--clients .section__wrapper .swiper-button-next {
+  right: -2%;
+}
+section.section--clients .section__wrapper .swiper-button-prev {
+  left: -2%;
 }
 .slider {
   position: relative;
